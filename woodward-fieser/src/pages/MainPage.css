@@ -1,0 +1,21 @@
+.main-page-background{
+    width: 100hh;
+    height: 100vh;
+    background-image: url('home-background.png');
+    background-repeat: no-repeat;
+    background-size: 1535px 710px;
+    position: relative;
+}
+
+.title
+{
+    position: absolute;
+    margin-left: 356px;
+    margin-top: 200px;
+    padding: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    width: 780px;
+    height: 275px;
+}
