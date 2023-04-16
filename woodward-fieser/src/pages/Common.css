@@ -1,3 +1,11 @@
 .experiment-page {
-    
+    background-image: url('exp-background.jpg');
+    width: 100hh;
+    height: 100vh;
+    position: relative;
+}
+
+.header {
+    background-image: blue;
+    position: absolute;
 }
