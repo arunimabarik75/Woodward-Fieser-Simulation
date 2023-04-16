@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:wght@50');
+
 .main-page-background{
     width: 100hh;
     height: 100vh;
@@ -9,13 +11,15 @@
 
 .title
 {
+    /* background-color: aqua; */
     position: absolute;
     margin-left: 356px;
     margin-top: 200px;
     padding: 20px;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: x-large;
-    width: 780px;
-    height: 275px;
+    font-family: 'Comfortaa', 'Verdana';
+    font-size: xx-large;
+    font-weight: bolder;
+    width: 820px;
+    height: 316px;
 }

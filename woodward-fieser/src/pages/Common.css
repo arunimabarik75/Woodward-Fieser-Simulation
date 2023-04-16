@@ -1,11 +1,27 @@
 .experiment-page {
     background-image: url('exp-background.jpg');
-    width: 100hh;
     height: 100vh;
     position: relative;
 }
 
 .header {
-    background-image: blue;
     position: absolute;
+    /* background-color: black; */
+    width: 100%;
+    height: 60px;
+}
+
+.content {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    color: white;
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    padding: 40px;
+    background-color: rgba(13,110,253,0.9);
+    width: 1450px;
+    height: 330px;   
 }
