@@ -9,7 +9,8 @@ export default function Simulation() {
         <Navigation />
       </div>
       <div className='content'>
-        <p>Simulation</p>
+      <h5 className='contentHeading'>Simulation</h5>
+      <p className='contentText'>    </p>
       </div>
     </div>
   )
