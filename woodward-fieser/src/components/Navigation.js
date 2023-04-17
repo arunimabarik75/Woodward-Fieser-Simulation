@@ -9,7 +9,7 @@ function Navigation() {
   return (
     <Navbar bg="primary" variant="dark" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="/aim">Woodward Fieser Rule &nbsp;&nbsp; |</Navbar.Brand>
+        <Navbar.Brand href="/aim" className='navText'>Woodward Fieser Rule &nbsp;&nbsp; |</Navbar.Brand>
         &nbsp;&nbsp;
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -18,17 +18,17 @@ function Navigation() {
             style={{ maxHeight: '200px' }}
             navbarScroll
           >
-            <Navbar.Brand href="/aim">Aim</Navbar.Brand>
+            <Navbar.Brand href="/aim" className='navText'>Aim</Navbar.Brand>
             &nbsp;&nbsp;
-            <Navbar.Brand href="/theory">Theory</Navbar.Brand>
+            <Navbar.Brand href="/theory" className='navText'>Theory</Navbar.Brand>
             &nbsp;&nbsp;
-            <Navbar.Brand href="/procedure">Procedure</Navbar.Brand>
+            <Navbar.Brand href="/procedure" className='navText'>Procedure</Navbar.Brand>
             &nbsp;&nbsp;
-            <Navbar.Brand href="/simulation">Simulation</Navbar.Brand>
+            <Navbar.Brand href="/simulation" className='navText'>Simulation</Navbar.Brand>
             &nbsp;&nbsp;
-            <Navbar.Brand href="/quiz">Quiz</Navbar.Brand>
+            <Navbar.Brand href="/quiz" className='navText'>Quiz</Navbar.Brand>
           </Nav>
-          <Form className="d-flex">
+          <Form className="d-flex buttontext">
             <Link to="/"><Button variant="light">&nbsp;&nbsp;Logout&nbsp;&nbsp;</Button></Link>
           </Form>
         </Navbar.Collapse>
