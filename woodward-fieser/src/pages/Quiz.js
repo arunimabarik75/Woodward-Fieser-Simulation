@@ -9,7 +9,8 @@ export default function Quiz() {
         <Navigation />
       </div>
       <div className='content'>
-        <p>Quiz</p>
+      <h5 className='contentHeading'>Quiz</h5>
+      <p className='contentText'>    </p>
       </div>
     </div>
   )
