@@ -9,12 +9,15 @@ export default function Aim() {
         <Navigation />
       </div>
       <div className='content'>
-        <p>Aim
+      <h5 className='contentHeading'>Aim</h5>
+        <p className='contentText'>
           <br />
           Determination of wavelength using Woodward Fieser Rule
           <br />
           <br />
-          Objectives
+        </p>
+        <h5 className='contentHeading'>Objectives</h5>
+        <p>
           <br />
           1)To understand the Woodward Fieser Rule using UV spectroscopy
           <br />
