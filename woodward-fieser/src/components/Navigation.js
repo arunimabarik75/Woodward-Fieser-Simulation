@@ -9,7 +9,7 @@ function Navigation() {
   return (
     <Navbar bg="primary" variant="dark" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="/aim">Woodward Fieser Rule &nbsp;&nbsp; |</Navbar.Brand>
+        <Navbar.Brand href="/aim" className='navText'>Woodward Fieser Rule &nbsp;&nbsp; |</Navbar.Brand>
         &nbsp;&nbsp;
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -18,15 +18,15 @@ function Navigation() {
             style={{ maxHeight: '200px' }}
             navbarScroll
           >
-            <NavLink to='/aim'><Navbar.Brand>Aim</Navbar.Brand></NavLink>
+            <NavLink to='/aim'><Navbar.Brand className='navText'>Aim</Navbar.Brand></NavLink>
             &nbsp;&nbsp;
-            <NavLink to='/theory'><Navbar.Brand>Theory</Navbar.Brand></NavLink>
+            <NavLink to='/theory'><Navbar.Brand className='navText'>Theory</Navbar.Brand></NavLink>
             &nbsp;&nbsp;
-            <NavLink to='/procedure'><Navbar.Brand>Procedure</Navbar.Brand></NavLink>
+            <NavLink to='/procedure'><Navbar.Brand className='navText'>Procedure</Navbar.Brand></NavLink>
             &nbsp;&nbsp;
-            <NavLink to='/simulation'><Navbar.Brand>Simulation</Navbar.Brand></NavLink>
+            <NavLink to='/simulation'><Navbar.Brand className='navText'>Simulation</Navbar.Brand></NavLink>
             &nbsp;&nbsp;
-            <NavLink to='/quiz'><Navbar.Brand>Quiz</Navbar.Brand></NavLink>
+            <NavLink to='/quiz'><Navbar.Brand className='navText'>Quiz</Navbar.Brand></NavLink>
           </Nav>
           <Form className="d-flex">
             <NavLink to="/"><Button variant="light">&nbsp;&nbsp;Logout&nbsp;&nbsp;</Button></NavLink>

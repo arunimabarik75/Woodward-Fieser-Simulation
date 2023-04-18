@@ -10,10 +10,13 @@ export default function Simulation() {
         <Navigation />
       </div>
       <div className='content'>
+        <h5 className='contentHeading'>Simulation</h5>
+        <p className='contentText'>    </p>
         <div className="left-side">
           <CompoundDetails />
         </div>
         <div className="right-side"></div>        
+      
       </div>
     </div>
   )

@@ -12,8 +12,8 @@ function LoginButton() {
 
   return (
     <>
-      <Button variant="primary" size='lg' onClick={handleShow}>
-        Login
+      <Button variant="primary" size='lg' onClick={handleShow} className=" buttontext">
+              Login
       </Button>
 
       <Modal centered show={show} onHide={handleClose}>
@@ -42,10 +42,10 @@ function LoginButton() {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="secondary" className=' buttontext' onClick={handleClose}>
             Close
           </Button>
-          <NavLink to="/aim"><Button variant="primary" onClick={handleClose}>
+          <NavLink to="/aim"><Button variant="primary" onClick={handleClose} className='buttontext'>
             Login
           </Button></NavLink>
         </Modal.Footer>

@@ -9,8 +9,8 @@ export default function Procedure() {
         <Navigation />
       </div>
       <div className='content'>
-        <p>Procedure
-        </p>
+        <h5 className='contentHeading'>Procedure </h5>
+        <p className='contentText'>    </p>
       </div>
     </div>
   )
