@@ -1,5 +1,6 @@
 import React from 'react'
 import Navigation from '../components/Navigation'
+import CompoundDetails from '../components/CompoundDetails'
 import './Common.css'
 
 export default function Simulation() {
@@ -9,7 +10,10 @@ export default function Simulation() {
         <Navigation />
       </div>
       <div className='content'>
-        <p>Simulation</p>
+        <div className="left-side">
+          <CompoundDetails />
+        </div>
+        <div className="right-side"></div>        
       </div>
     </div>
   )

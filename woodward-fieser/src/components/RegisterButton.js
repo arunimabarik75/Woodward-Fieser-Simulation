@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function RegisterButton() {
   const [show, setShow] = useState(false);
@@ -59,9 +59,9 @@ function RegisterButton() {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Link to="/aim"><Button variant="primary" onClick={handleClose}>
+          <NavLink to="/aim"><Button variant="primary" onClick={handleClose}>
             Register
-          </Button></Link>
+          </Button></NavLink>
         </Modal.Footer>
       </Modal>
     </>

@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navigation() {
   return (
@@ -18,18 +18,18 @@ function Navigation() {
             style={{ maxHeight: '200px' }}
             navbarScroll
           >
-            <Navbar.Brand href="/aim">Aim</Navbar.Brand>
+            <NavLink to='/aim'><Navbar.Brand>Aim</Navbar.Brand></NavLink>
             &nbsp;&nbsp;
-            <Navbar.Brand href="/theory">Theory</Navbar.Brand>
+            <NavLink to='/theory'><Navbar.Brand>Theory</Navbar.Brand></NavLink>
             &nbsp;&nbsp;
-            <Navbar.Brand href="/procedure">Procedure</Navbar.Brand>
+            <NavLink to='/procedure'><Navbar.Brand>Procedure</Navbar.Brand></NavLink>
             &nbsp;&nbsp;
-            <Navbar.Brand href="/simulation">Simulation</Navbar.Brand>
+            <NavLink to='/simulation'><Navbar.Brand>Simulation</Navbar.Brand></NavLink>
             &nbsp;&nbsp;
-            <Navbar.Brand href="/quiz">Quiz</Navbar.Brand>
+            <NavLink to='/quiz'><Navbar.Brand>Quiz</Navbar.Brand></NavLink>
           </Nav>
           <Form className="d-flex">
-            <Link to="/"><Button variant="light">&nbsp;&nbsp;Logout&nbsp;&nbsp;</Button></Link>
+            <NavLink to="/"><Button variant="light">&nbsp;&nbsp;Logout&nbsp;&nbsp;</Button></NavLink>
           </Form>
         </Navbar.Collapse>
       </Container>
