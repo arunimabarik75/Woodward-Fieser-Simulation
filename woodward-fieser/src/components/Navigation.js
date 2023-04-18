@@ -27,6 +27,8 @@ function Navigation() {
             <NavLink to='/simulation'><Navbar.Brand className='navText'>Simulation</Navbar.Brand></NavLink>
             &nbsp;&nbsp;
             <NavLink to='/quiz'><Navbar.Brand className='navText'>Quiz</Navbar.Brand></NavLink>
+            &nbsp;&nbsp;
+            <NavLink to='/quiz'><Navbar.Brand href="/feedback" className='navText'>Feedback</Navbar.Brand></NavLink>
           </Nav>
           <Form className="d-flex">
             <NavLink to="/"><Button variant="light">&nbsp;&nbsp;Logout&nbsp;&nbsp;</Button></NavLink>

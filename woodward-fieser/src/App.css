@@ -51,6 +51,33 @@
 .navText{
   font-family: 'Yeseva One', cursive;
 }
+
+.tableText{
+  font-family: 'Noto Serif';
+  color: aliceblue;
+  padding: 0.25rem;
+  margin: 0.25rem;
+  font-size: large;
+}
+.row{
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+.form{
+  /* margin: 0.25rem; */
+  /* padding: 0.25rem; */
+}
+/* 
+font-family: 'Bungee Inline', cursive;
+font-family: 'Macondo', cursive;
+font-family: 'Noto Serif', serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Yeseva One', cursive;
+font-family: 'Zeyada', cursive;
+
+*/
+
+
 /* 
 font-family: 'Bungee Inline', cursive;
 font-family: 'Macondo', cursive;
