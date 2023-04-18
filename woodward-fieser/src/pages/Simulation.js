@@ -1,7 +1,8 @@
 import React from 'react'
 import Navigation from '../components/Navigation'
-import CompoundDetails from '../components/CompoundDetails'
 import './Common.css'
+import CompoundDetails from '../components/CompoundDetails'
+import DropdownMenu from '../components/DropdownMenu'
 
 export default function Simulation() {
   return (
@@ -10,13 +11,14 @@ export default function Simulation() {
         <Navigation />
       </div>
       <div className='content'>
-        <h5 className='contentHeading'>Simulation</h5>
-        <p className='contentText'>    </p>
         <div className="left-side">
+          <h5 className='contentHeading'>Simulation</h5>
+          <br />
+          <DropdownMenu />
+          <br />
           <CompoundDetails />
         </div>
         <div className="right-side"></div>        
-      
       </div>
     </div>
   )

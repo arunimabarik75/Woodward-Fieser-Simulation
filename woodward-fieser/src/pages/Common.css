@@ -2,6 +2,8 @@
     background-image: url('exp-background.jpg');
     height: 100vh;
     position: relative;
+    background-repeat: repeat;
+    /* background-repeat: repeat-y; */
 }
 
 .header {
@@ -23,19 +25,22 @@
     padding: 40px;
     background-color: rgba(13,110,253,0.9);
     width: 1450px;
-    height: 610px;   
+    min-height: 200px;   
     display: flex;
 }
 
 .left-side {
-    background-color: brown;
+    /* background-color: brown; */
     width: 50%;
     height: auto;
     float: left;
+    text-align: center;
+    padding: 15px;
+    padding-right: 50px;
 }
 
 .right-side {
-    background-color: blueviolet;
+    background-color: whitesmoke;
     width: 50%;
     height: auto; 
     float: right;
