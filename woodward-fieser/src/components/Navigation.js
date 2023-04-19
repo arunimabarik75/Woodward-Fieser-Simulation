@@ -28,10 +28,14 @@ function Navigation() {
             &nbsp;&nbsp;
             <NavLink to='/quiz'><Navbar.Brand className='navText'>Quiz</Navbar.Brand></NavLink>
             &nbsp;&nbsp;
+            <NavLink to='/assignment'><Navbar.Brand className='navText'>Assignment</Navbar.Brand></NavLink>
+            &nbsp;&nbsp;
             <NavLink to='/feedback'><Navbar.Brand href="/feedback" className='navText'>Feedback</Navbar.Brand></NavLink>
+            &nbsp;&nbsp;
+            <NavLink to='/references'><Navbar.Brand className='navText'>References</Navbar.Brand></NavLink>
           </Nav>
           <Form className="d-flex">
-            <NavLink to="/"><Button variant="light">&nbsp;&nbsp;Logout&nbsp;&nbsp;</Button></NavLink>
+            <NavLink to="/"><Button variant="light" size='lg' className='button-text'>&nbsp;&nbsp;Logout&nbsp;&nbsp;</Button></NavLink>
           </Form>
         </Navbar.Collapse>
       </Container>

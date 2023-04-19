@@ -12,8 +12,8 @@ function LoginButton() {
 
   return (
     <>
-      <Button variant="primary" size='lg' onClick={handleShow} className=" buttontext">
-              Login
+      <Button variant="primary" size='lg' onClick={handleShow}>
+              &nbsp;&nbsp;Login&nbsp;&nbsp;
       </Button>
 
       <Modal centered show={show} onHide={handleClose}>
@@ -21,7 +21,7 @@ function LoginButton() {
           <Modal.Title>Login</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form>
+          <p><Form>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Email address</Form.Label>
               <Form.Control
@@ -39,14 +39,14 @@ function LoginButton() {
                 placeholder="* * * * * * * *"
               />
             </Form.Group>
-          </Form>
+          </Form></p>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" className=' buttontext' onClick={handleClose}>
-            Close
-          </Button>
-          <NavLink to="/aim"><Button variant="primary" onClick={handleClose} className='buttontext'>
-            Login
+          <Button variant="secondary" className="button-text" size='lg' onClick={handleClose}>
+            &nbsp;&nbsp;Close&nbsp;&nbsp;
+          </Button>&nbsp;&nbsp;
+          <NavLink to="/aim"><Button variant="primary" className="button-text" size='lg' onClick={handleClose}>
+            &nbsp;&nbsp;Login&nbsp;&nbsp;
           </Button></NavLink>
         </Modal.Footer>
       </Modal>

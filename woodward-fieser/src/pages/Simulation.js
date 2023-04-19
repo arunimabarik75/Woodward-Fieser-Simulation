@@ -12,7 +12,7 @@ export default function Simulation() {
       </div>
       <div className='content'>
         <div className="left-side">
-          <h5 className='contentHeading'>Simulation</h5>
+          <h5>Simulation</h5>
           <br />
           <DropdownMenu />
           <br />

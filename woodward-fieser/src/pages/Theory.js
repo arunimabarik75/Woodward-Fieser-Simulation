@@ -9,8 +9,7 @@ export default function Theory() {
         <Navigation />
       </div>
       <div className='content'>
-      <h5 className='contentHeading'>Theory</h5>
-      <p className='contentText'> </p>
+      <h5>Theory</h5>
       </div>
     </div>
   )

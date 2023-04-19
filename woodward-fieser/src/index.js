@@ -12,7 +12,9 @@ import Theory from './pages/Theory';
 import Procedure from './pages/Procedure';
 import Simulation from './pages/Simulation';
 import Quiz from './pages/Quiz';
+import Assignment from './pages/Assignment';
 import Feedback from './pages/Feedback';
+import References from './pages/References';
 
 const router = createBrowserRouter([
   {
@@ -41,8 +43,16 @@ const router = createBrowserRouter([
     element: <Quiz />,
   },
   {
+    path: "/assignment",
+    element: <Assignment />,
+  },
+  {
     path: "/feedback",
     element: <Feedback />,
+  },
+  {
+    path: "/references",
+    element: <References />,
   },
 ]);
 

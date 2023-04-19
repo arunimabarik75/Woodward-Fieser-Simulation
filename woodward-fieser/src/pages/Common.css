@@ -2,8 +2,6 @@
     background-image: url('exp-background.jpg');
     height: 100vh;
     position: relative;
-    background-repeat: repeat;
-    /* background-repeat: repeat-y; */
 }
 
 .header {

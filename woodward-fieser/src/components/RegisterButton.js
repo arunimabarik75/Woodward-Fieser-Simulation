@@ -13,7 +13,7 @@ function RegisterButton() {
   return (
     <>
       <Button variant="primary" size='lg' onClick={handleShow}>
-        Register
+        &nbsp;&nbsp;Register&nbsp;&nbsp;
       </Button>
 
       <Modal centered show={show} onHide={handleClose}>
@@ -21,7 +21,7 @@ function RegisterButton() {
           <Modal.Title>Register</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form>
+          <p><Form>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Name</Form.Label>
               <Form.Control
@@ -53,14 +53,14 @@ function RegisterButton() {
                 placeholder="* * * * * * * *"
               />
             </Form.Group>
-          </Form>
+          </Form></p>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <NavLink to="/aim"><Button variant="primary" onClick={handleClose}>
-            Register
+          <Button variant="secondary" size='lg' className='button-text' onClick={handleClose}>
+            &nbsp;&nbsp;Close&nbsp;&nbsp;
+          </Button>&nbsp;&nbsp;
+          <NavLink to="/aim"><Button variant="primary" size='lg' className='button-text' onClick={handleClose}>
+            &nbsp;&nbsp;Register&nbsp;&nbsp;
           </Button></NavLink>
         </Modal.Footer>
       </Modal>

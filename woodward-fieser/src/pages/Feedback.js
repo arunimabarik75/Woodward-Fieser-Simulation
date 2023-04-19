@@ -16,9 +16,7 @@ export default function Feedback() {
         <Navigation />
       </div>
       <div className='content' >
-      <h5 className='contentHeading'>Feedback</h5>
-      <br/>
-      <br/>
+      <h5>Feedback</h5>
       <p className='tableText'>    
         <form>
             <Container> 
@@ -31,10 +29,9 @@ export default function Feedback() {
                     <Col><input type='text' name='practicalId'></input></Col>
                 </Row>
             </Container>
-            <hr/>
+            <hr />
             <Container>
             <div className='mb-3'>
-                {/* <label>Please select from below options : </label> */}
                 <Table  className='tableText'>
                     <thead>
                         <tr>
@@ -104,10 +101,6 @@ export default function Feedback() {
                     <Col><textarea rows={2} cols={50}/></Col>
                 </Row>
                 <Row>
-                    <Col>Did you experience any problem ? </Col>
-                    <Col><textarea rows={2} cols={50}/></Col>
-                </Row>
-                <Row>
                     <Col> Is there anything you would like to tell us ? </Col>
                     <Col><textarea rows={2} cols={50}/></Col>
                 </Row>
@@ -120,8 +113,9 @@ export default function Feedback() {
             <hr/>
             <center>
             <Container>
-                <Button variant="outline-danger" size='lg'>Clear Form</Button>{' '}
-                <Button variant="outline-success" size='lg'>Submit Form</Button>{' '} 
+                <Button variant="light" className='button-text' size='lg'>&nbsp;&nbsp;Clear Form&nbsp;&nbsp;</Button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <Button variant="light" className='button-text' size='lg'>&nbsp;&nbsp;Submit Form&nbsp;&nbsp;</Button>
             </Container>
             </center>
         </form>

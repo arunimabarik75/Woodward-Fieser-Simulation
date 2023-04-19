@@ -1,30 +1,39 @@
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
+import { Container } from 'react-bootstrap';
 
 function CompoundDetails() {
   return (
-    <Form>
-        <Form.Group as={Row} className="mb-3" controlId="formBasicEmail">
-        <Form.Label column sm='2'>Base Value</Form.Label>
-        <Col sm='10'><Form.Control type="text" className='w-50' /></Col>
-        <Form.Label column sm='2'>Ring Residue</Form.Label>
-        <Col sm='10'><Form.Control type="text" className='w-50' /></Col>
-        <Form.Label column sm='2'>Double Bond Conjugation</Form.Label>
-        <Col sm='10'><Form.Control type="text" className='w-50' /></Col>
-        <Form.Label column sm='2'>Exocyclic Double Bonds</Form.Label>
-        <Col sm='10'><Form.Control type="text" className='w-50' /></Col>
-        <Form.Label column sm='2'>Polar Groups</Form.Label>
-        <Col sm='10'><Form.Control type="text" className='w-50' /></Col>
-        <Form.Label column sm='2'>Calculated λmax</Form.Label>
-        <Col sm='10'><Form.Control type="text" className='w-50'  /></Col>
-      </Form.Group>
-
-      <Button variant="light" size='lg' type="submit">
-        Submit
+    <form><p>
+        <Container> 
+          <Row>
+            <Col>Base Value :</Col>
+            <Col><input type='text' name='emailId'></input></Col>
+        </Row>
+        <br/>
+          <Row>
+            <Col>Ring Residue :</Col>
+            <Col><input type='text' name='practicalId'></input></Col>
+        </Row><br />
+        <Row>
+            <Col>Double Bond Conjugation :</Col>
+            <Col><input type='text' name='practicalId'></input></Col>
+        </Row><br />
+        <Row>
+            <Col>Exocyclic Double Bonds :</Col>
+            <Col><input type='text' name='practicalId'></input></Col>
+        </Row><br />
+        <Row>
+            <Col>Polar groups :</Col>
+            <Col><input type='text' name='practicalId'></input></Col>
+          </Row><br />
+        </Container>
+        <br />
+      <Button variant="light" className='button-text' size='lg' type="submit">
+        &nbsp;&nbsp;Submit&nbsp;&nbsp;
       </Button>
-    </Form>
+    </p></form>
   );
 }
 
