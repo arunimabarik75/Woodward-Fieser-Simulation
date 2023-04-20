@@ -10,11 +10,6 @@ function DropdownMenu() {
       </Dropdown.Item>
       <Dropdown.Item><p className='dropdown'>10,13-dimethyl-2,3,9,10,11,12,13,15,16,17-decahydro-1H-cyclopenta[a]phenanthrene</p>
       </Dropdown.Item>
-      <Dropdown.Item><p className='dropdown'>3,4-dimethylpent-3-en-2-one</p></Dropdown.Item>
-      <Dropdown.Item><p className='dropdown'>1-methyl-4,5,6,7,8,8a-hexahydroazulen-2(1H)-one</p></Dropdown.Item>
-      <Dropdown.Item><p className='dropdown'>4,4a,5,6,7,8-hexahydrophenanthren-2(3H)-on</p></Dropdown.Item>
-      <Dropdown.Item><p className='dropdown'>Enone</p></Dropdown.Item>
-      <Dropdown.Item><p className='dropdown'>3,4,5-trihydroxybenzoic acid</p></Dropdown.Item>
       <Dropdown.Item><p className='dropdown'>Heteroannular Diene</p></Dropdown.Item>
     </DropdownButton>
   );
