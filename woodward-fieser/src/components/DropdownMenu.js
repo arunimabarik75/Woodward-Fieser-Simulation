@@ -11,6 +11,7 @@ function DropdownMenu() {
       <Dropdown.Item><p className='dropdown'>10,13-dimethyl-2,3,9,10,11,12,13,15,16,17-decahydro-1H-cyclopenta[a]phenanthrene</p>
       </Dropdown.Item>
       <Dropdown.Item><p className='dropdown'>Heteroannular Diene</p></Dropdown.Item>
+      <Dropdown.Item><p className='dropdown'>Cisoid Diene</p></Dropdown.Item>
     </DropdownButton>
   );
 }
