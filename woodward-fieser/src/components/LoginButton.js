@@ -35,7 +35,7 @@ function LoginButton() {
         cookie.set('token', result.data['accessToken'])
         window.location.href="/aim";
       handleClose()})
-      .catch((error) => {console.log(error);})
+      .catch((error) => {console.log(error); alert("Incorrect username/password")})
       
   }
 

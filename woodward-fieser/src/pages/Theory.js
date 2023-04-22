@@ -13,12 +13,7 @@ export default function Theory() {
   axios.get(api, { headers: {"Authorization" : `Bearer ${token}`} })
         .then(res => {
           settheory(res.data['theory']);
-            // console.log(res.data);
-        this.setState({
-            items: res.data,  /*set response data in items array*/
-            isLoaded : true,
-            redirectToReferrer: false
-        })})
+          })
   return (
     <div className='experiment-page'>
       <div className='header'>

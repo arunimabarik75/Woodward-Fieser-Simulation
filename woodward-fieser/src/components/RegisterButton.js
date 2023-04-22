@@ -32,9 +32,9 @@ function RegisterButton() {
       },
     }
     axios(configuration)
-    .then((result) => {console.log(result);})
-    .catch((error) => {console.log(error);})
-    handleClose();
+    .then((result) => {console.log(result); handleClose();})
+    .catch((error) => {console.log(error); alert('Email address already in use')});
+    
   }
 
   return (
