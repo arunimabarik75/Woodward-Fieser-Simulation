@@ -1,14 +1,43 @@
+import axios from 'axios';
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import { NavLink } from "react-router-dom";
+import Cookies from 'universal-cookie';
+
+const cookie = new Cookies();
 
 function LoginButton() {
   const [show, setShow] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if(!email || !password){
+      alert('All fields are mandatory')
+    }
+    const configuration = {
+      method: "post",
+      url: "http://localhost:5001/api/users/login",
+      data: {
+        email,
+        password,
+      },
+      
+    };
+    axios(configuration)
+      .then((result) => {
+        cookie.set('token', result.data['accessToken'])
+        window.location.href="/aim";
+      handleClose()})
+      .catch((error) => {console.log(error);})
+      
+  }
 
   return (
     <>
@@ -26,6 +55,8 @@ function LoginButton() {
               <Form.Label>Email address</Form.Label>
               <Form.Control
                 type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="name@example.com"
                 autoFocus
               />
@@ -36,6 +67,8 @@ function LoginButton() {
             >
               <Form.Label>Password</Form.Label>
               <Form.Control type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
                 placeholder="* * * * * * * *"
               />
             </Form.Group>
@@ -45,7 +78,7 @@ function LoginButton() {
           <Button variant="secondary" className="button-text" size='lg' onClick={handleClose}>
             &nbsp;&nbsp;Close&nbsp;&nbsp;
           </Button>&nbsp;&nbsp;
-          <NavLink to="/aim"><Button variant="primary" className="button-text" size='lg' onClick={handleClose}>
+          <NavLink to="/aim"><Button variant="primary" className="button-text" size='lg' onClick={(e) => handleSubmit(e)}>
             &nbsp;&nbsp;Login&nbsp;&nbsp;
           </Button></NavLink>
         </Modal.Footer>
