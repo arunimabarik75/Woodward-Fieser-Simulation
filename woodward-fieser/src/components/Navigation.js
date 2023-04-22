@@ -5,7 +5,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { NavLink } from "react-router-dom";
 
+import Cookies from 'universal-cookie';
+const cookie = new Cookies();
+
 function Navigation() {
+  const handleLogout = () => {
+    cookie.remove('token');
+  }
   return (
     <Navbar bg="primary" variant="dark" expand="lg">
       <Container fluid>
@@ -35,7 +41,7 @@ function Navigation() {
             <NavLink to='/references'><Navbar.Brand className='navText'>References</Navbar.Brand></NavLink>
           </Nav>
           <Form className="d-flex">
-            <NavLink to="/"><Button variant="light" size='lg' className='button-text'>&nbsp;&nbsp;Logout&nbsp;&nbsp;</Button></NavLink>
+            <NavLink to="/"><Button onClick={handleLogout} variant="light" size='lg' className='button-text'>&nbsp;&nbsp;Logout&nbsp;&nbsp;</Button></NavLink>
           </Form>
         </Navbar.Collapse>
       </Container>
