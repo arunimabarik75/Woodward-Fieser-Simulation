@@ -21,11 +21,11 @@ export default function Feedback() {
         <form>
             <Container> 
                 <Row>
-                    <Col>Email :</Col>
+                    <Col><p>Email :</p></Col>
                     <Col><input type='text' name='emailId'></input></Col>
                 </Row>
                 <Row>
-                    <Col>Practical :</Col>
+                    <Col><p>Practical :</p></Col>
                     <Col><input type='text' name='practicalId'></input></Col>
                 </Row>
             </Container>
@@ -97,15 +97,15 @@ export default function Feedback() {
             </Container>
             <Container>
                 <Row>
-                    <Col>How helpful do you feel the system is ? </Col>
+                    <Col><p>How helpful do you feel the system is ?</p></Col>
                     <Col><textarea rows={2} cols={50}/></Col>
                 </Row>
                 <Row>
-                    <Col> Is there anything you would like to tell us ? </Col>
+                    <Col><p> Is there anything you would like to tell us ? </p></Col>
                     <Col><textarea rows={2} cols={50}/></Col>
                 </Row>
                 <Row>
-                    <Col> Specify three problems/difficulties you faced while performing the experiments? </Col>
+                    <Col><p> Specify three problems/difficulties you faced while performing the experiments? </p></Col>
                     <Col><textarea rows={2} cols={50}/></Col>
                 </Row>
                 

@@ -15,10 +15,10 @@ h5 {
   text-underline-offset: 7px;
 }
 
-p {
+p, li {
   /* font-family: 'Roboto Slab', serif; */
   font-family: 'Noto Serif', serif;
-  font-size: 0.8em;
+  font-size: 1.2em;
 }
 
 .navText{
@@ -30,14 +30,14 @@ p {
   color: aliceblue;
   padding: 0.25rem;
   margin: 0.25rem;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 tr {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
-th {
+th, td {
   font-family: 'Noto Serif', serif;
   font-size: 1em;
 }
