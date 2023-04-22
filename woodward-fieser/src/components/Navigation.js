@@ -26,8 +26,8 @@ function Navigation() {
           >
             <NavLink to='/aim'><Navbar.Brand className='navText'>Aim</Navbar.Brand></NavLink>
             &nbsp;&nbsp;
-            <NavLink to='/theory'><Navbar.Brand className='navText'>Theory</Navbar.Brand></NavLink>
-            &nbsp;&nbsp;
+            {/* <NavLink to='/theory'><Navbar.Brand className='navText'>Theory</Navbar.Brand></NavLink>
+            &nbsp;&nbsp; */}
             <NavLink to='/procedure'><Navbar.Brand className='navText'>Procedure</Navbar.Brand></NavLink>
             &nbsp;&nbsp;
             <NavLink to='/simulation'><Navbar.Brand className='navText'>Simulation</Navbar.Brand></NavLink>

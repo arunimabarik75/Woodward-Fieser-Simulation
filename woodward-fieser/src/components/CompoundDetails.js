@@ -1,9 +1,21 @@
+import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { Container } from 'react-bootstrap';
 
-function CompoundDetails() {
+function CompoundDetails({lmax}) {
+  const [val, setVal] = useState(0);
+  const submitHandler = (e, x)=>{
+    e.preventDefault()
+    // console.log(x)
+    if(Number(x) === Number(lmax)){
+      alert('correct values entered');
+    }
+    else{
+      alert('Incorrect l max found');
+    }
+  }
   return (
     <form><p>
         <Container> 
@@ -28,9 +40,14 @@ function CompoundDetails() {
             <Col>Polar groups :</Col>
             <Col><input type='text' name='practicalId'></input></Col>
           </Row><br />
+          
+        <Row>
+            <Col>lmax :</Col>
+            <Col><input value={val} onChange={(e) => setVal(e.target.value)}  type='text' name='practicalId'></input></Col>
+          </Row><br />
         </Container>
         <br />
-      <Button variant="light" className='button-text' size='lg' type="submit">
+      <Button variant="light" className='button-text' size='lg' type="submit" onClick={(e) => submitHandler(e, val)}>
         &nbsp;&nbsp;Submit&nbsp;&nbsp;
       </Button>
     </p></form>
