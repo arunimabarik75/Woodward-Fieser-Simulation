@@ -15,6 +15,7 @@ import Quiz from './pages/Quiz';
 import Assignment from './pages/Assignment';
 import Feedback from './pages/Feedback';
 import References from './pages/References';
+import About from './pages/About';
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
   {
     path: "/references",
     element: <References />,
+  },
+  {
+    path: "/about",
+    element: <About />,
   },
 ]);
 

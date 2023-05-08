@@ -3,8 +3,9 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Image } from 'react-bootstrap';
 import { NavLink } from "react-router-dom";
-
+import Nirma from "../pages/nirma.jpg"
 import Cookies from 'universal-cookie';
 const cookie = new Cookies();
 
@@ -15,6 +16,7 @@ function Navigation() {
   return (
     <Navbar bg="primary" variant="dark" expand="lg">
       <Container fluid>
+        <Image src={Nirma} width={100} height={50}></Image> &nbsp; &nbsp;
         <Navbar.Brand href="/aim" className='navText'>Woodward Fieser Rule &nbsp;&nbsp; |</Navbar.Brand>
         &nbsp;&nbsp;
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -39,6 +41,8 @@ function Navigation() {
             <NavLink to='/feedback'><Navbar.Brand href="/feedback" className='navText'>Feedback</Navbar.Brand></NavLink>
             &nbsp;&nbsp;
             <NavLink to='/references'><Navbar.Brand className='navText'>References</Navbar.Brand></NavLink>
+            &nbsp;&nbsp;
+            <NavLink to='/about'><Navbar.Brand className='navText'>About Us</Navbar.Brand></NavLink>
           </Nav>
           <Form className="d-flex">
             <NavLink to="/"><Button onClick={handleLogout} variant="light" size='lg' className='button-text'>&nbsp;&nbsp;Logout&nbsp;&nbsp;</Button></NavLink>

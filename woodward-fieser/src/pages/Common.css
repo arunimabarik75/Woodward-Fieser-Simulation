@@ -22,6 +22,7 @@
     margin-bottom: 40px;
     padding: 40px;
     background-color: rgba(13,110,253,0.9);
+    /* background-color: rgba(0,0,128,0.9); */
     width: 1450px;
     min-height: 200px;   
     display: flex;
@@ -48,4 +49,29 @@
     width: 50%;
     height: auto; 
     float: right;
+}
+.nameImg{
+    color: black;
+}
+.details-about{
+    color: black;
+}
+.about-detail{
+    margin: 2rem;
+}
+#about-content{
+    display: inline;
+    color: white;
+}
+.navText2{
+    /* color: rgba(13,110,253,0.9); */
+    color: navy;
+    font-family: 'Yeseva One', cursive;
+}
+.card-link{
+    /* background-color: navy; */
+    color: rgba(0,0,128,0.9);
+}
+#feedBack{
+    display: inline;
 }
