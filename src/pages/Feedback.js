@@ -15,7 +15,7 @@ export default function Feedback() {
       <div className='header'>
         <Navigation />
       </div>
-      <div className='content' >
+      <div className='content' id="feedBack">
       <h5>Feedback</h5>
       <p className='tableText'>    
         <form>

@@ -13,8 +13,29 @@ export default function Simulation() {
   const token = cookie.get('token');
   const [img, setImg] = useState('')
   const [lmax, setLmax] = useState('')
+  const [name,setName] = useState('')
   const selectedCompound = (e) => {
     e = Number(e)
+    var nn = ''
+    if (e === 1){
+      nn = '2,4-dimethylpenta-1,3-diene';
+    }
+    else if(e === 2){
+      nn = '1-methylcyclohexa-1,3-diene';
+    }
+    else if(e === 3){
+      nn = '3-methoxy-10-methyl-2,7,8,9,10,11,12,13,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthrene';
+    }
+    else if(e === 4){
+      nn = '10,13-dimethyl-2,3,9,10,11,12,13,15,16,17-decahydro-1H-cyclopenta[a]phenanthrene';
+    }
+    else if(e === 5){
+      nn = 'Heteroannular Diene';
+    }
+    else if(e === 6){
+      nn = 'Cisoid Diene';
+    }
+    
     console.log(typeof e);
 
     const api = 'http://localhost:5001/api/project/1'
@@ -24,6 +45,7 @@ export default function Simulation() {
             console.log(res)
             console.log(simulation)
             const lst = simulation[e-1];
+            setName(nn)
             setImg(lst['img'])
             setLmax(lst['lmax'])
             console.log(lst['lmax'])
@@ -43,7 +65,11 @@ export default function Simulation() {
           <br />
           <CompoundDetails lmax={lmax} />
         </div>
-        <div className="right-side"><p dangerouslySetInnerHTML={{__html: img}}></p></div>        
+        <div className="right-side">
+          <p dangerouslySetInnerHTML={{__html: img}}></p>
+          {console.log(img)}
+          <p className='nameImg'>Name: {name}</p>
+          </div>        
       </div>
     </div>
   )
