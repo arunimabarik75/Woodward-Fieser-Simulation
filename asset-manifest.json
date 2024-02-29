@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Woodward-Fieser-Simulation/static/css/main.757fc984.css",
+    "main.js": "/Woodward-Fieser-Simulation/static/js/main.107f49c3.js",
+    "static/media/devyani.jpg": "/Woodward-Fieser-Simulation/static/media/devyani.e3cdb8c94f6076e72281.jpg",
+    "static/media/home-background.png": "/Woodward-Fieser-Simulation/static/media/home-background.424b317055447de4503a.png",
+    "static/media/20BCE079A.jpg": "/Woodward-Fieser-Simulation/static/media/20BCE079A.bc9d869ad928b0d77bcd.jpg",
+    "static/media/exp-background.jpg": "/Woodward-Fieser-Simulation/static/media/exp-background.31c07ee31e96d1c61922.jpg",
+    "static/media/devanshi.jpg": "/Woodward-Fieser-Simulation/static/media/devanshi.6b1feb2b4457fffacc31.jpg",
+    "static/media/arunima.jpg": "/Woodward-Fieser-Simulation/static/media/arunima.592f6f706f6638e0dca0.jpg",
+    "static/media/nirma.jpg": "/Woodward-Fieser-Simulation/static/media/nirma.a81d9e68a4cecb0f0770.jpg",
+    "static/media/meet.jpg": "/Woodward-Fieser-Simulation/static/media/meet.c3109eee4f98bd2405ce.jpg",
+    "index.html": "/Woodward-Fieser-Simulation/index.html",
+    "main.757fc984.css.map": "/Woodward-Fieser-Simulation/static/css/main.757fc984.css.map",
+    "main.107f49c3.js.map": "/Woodward-Fieser-Simulation/static/js/main.107f49c3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.757fc984.css",
+    "static/js/main.107f49c3.js"
+  ]
+}
