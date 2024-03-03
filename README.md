@@ -15,13 +15,17 @@ This project is a virtual lab for simulating the Woodward-Fieser rules, a set of
 
 ## Getting Started
 1. Clone this repository
+   
   `git clone https://github.com/arunimabarik75/Woodward-Fieser-Simulation.git`
 
 2. Install dependencies
+   
   `cd Woodward-Fieser-Simulation`
+  
   `npm install`
 
 3. Start the development server
+   
   `npm start`
 
 4. Open `http://localhost:3000` in your web browser.
